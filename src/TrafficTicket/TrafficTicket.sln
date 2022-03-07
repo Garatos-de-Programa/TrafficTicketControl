@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficTicket.Api", "TrafficTicket.Api\TrafficTicket.Api.csproj", "{5E41525A-853E-427B-A13A-2C07533F227F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E41525A-853E-427B-A13A-2C07533F227F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E41525A-853E-427B-A13A-2C07533F227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E41525A-853E-427B-A13A-2C07533F227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E41525A-853E-427B-A13A-2C07533F227F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86B796DE-FC6A-4313-8393-7B10EF5E8FE5}
+	EndGlobalSection
+EndGlobal
