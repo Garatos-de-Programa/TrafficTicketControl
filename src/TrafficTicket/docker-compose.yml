@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  trafficdb:
+    image: mongo
+
+  portainer:
+    image: portainer/portainer-ce
+
+  trafficticket.api:
+    image: ${DOCKER_REGISTRY-}trafficticketapi
+    build:
+      context: .
+      dockerfile: TrafficTicket.Api/Dockerfile
+      
+volumes:
+  mongo_data:
