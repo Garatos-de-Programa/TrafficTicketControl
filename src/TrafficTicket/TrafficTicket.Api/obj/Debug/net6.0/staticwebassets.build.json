@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "41k9XZLdzei55KLyTX2AImuz/P1/Wnfw6F5ZUzyr3nM=",
+  "Source": "TrafficTicket.Api",
+  "BasePath": "_content/TrafficTicket.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

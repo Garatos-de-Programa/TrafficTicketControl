@@ -1,0 +1,15 @@
+services:
+  trafficticket.api:
+    build:
+      context: C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket
+      dockerfile: TrafficTicket.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: trafficticketapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\MLKjo\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+version: '3.4'
