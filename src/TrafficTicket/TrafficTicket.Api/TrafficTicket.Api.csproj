@@ -15,4 +15,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataContracts\Commands\" />
+    <Folder Include="DataContracts\Responses\" />
+    <Folder Include="DataContracts\Queries\" />
+  </ItemGroup>
+
 </Project>

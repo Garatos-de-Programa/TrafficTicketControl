@@ -17,5 +17,14 @@
         public bool Active { get; set; }
 
         public DateTime CreatedAt { get; set; }
+
+        public User()
+        {
+        }
+
+        public User(string id)
+        {
+            Id = id;
+        }
     }
 }

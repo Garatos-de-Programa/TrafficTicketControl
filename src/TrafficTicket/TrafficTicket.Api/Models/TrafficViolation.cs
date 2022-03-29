@@ -9,5 +9,14 @@
         public string Name { get; set; }
 
         public DateTime CreatedAt { get; set; }
+
+        public TrafficViolation()
+        {
+        }
+
+        public TrafficViolation(string id)
+        {
+            Id = id;
+        }
     }
 }

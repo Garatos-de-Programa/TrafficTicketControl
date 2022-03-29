@@ -19,5 +19,14 @@
         public bool Computed { get; set; }
 
         public IEnumerable<TrafficViolation> TrafficViolations { get; set; }
+
+        public TrafficFine()
+        {
+        }
+
+        public TrafficFine(string id)
+        {
+            Id = id;
+        }
     }
 }
