@@ -1,4 +1,5 @@
-﻿using TrafficTicket.Api.Models.TrafficFine;
+﻿using TrafficTicket.Api.DataContracts.Queries;
+using TrafficTicket.Api.Models.TrafficFine;
 
 namespace TrafficTicket.Api.Repositories
 {
@@ -13,5 +14,6 @@ namespace TrafficTicket.Api.Repositories
         Task<bool> UpdateAsync(TrafficFine trafficFine);
 
         Task<bool> DeleteAsync(string id);
+        Task<TrafficFine> GetByDateSearch(DateSearchQuery search);
     }
 }

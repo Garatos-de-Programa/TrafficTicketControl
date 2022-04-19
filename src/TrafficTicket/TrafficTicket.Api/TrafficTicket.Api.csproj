@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Flunt" Version="2.0.5" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
@@ -18,7 +19,6 @@
   <ItemGroup>
     <Folder Include="DataContracts\Commands\" />
     <Folder Include="DataContracts\Responses\" />
-    <Folder Include="DataContracts\Queries\" />
   </ItemGroup>
 
 </Project>
