@@ -11,7 +11,7 @@ namespace TrafficTicket.Api.Data
         {
             var connectionString = configuration.GetValue<string>("DatabaseSettings:ConnectionString");
             var databaseName = configuration.GetValue<string>("DatabaseSettings:DatabaseName");
-            var collectionName = configuration.GetValue<string>("DatabaseSettings:CollectionName");
+            var collectionName = "User";
 
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(databaseName);

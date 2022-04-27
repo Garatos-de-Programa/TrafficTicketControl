@@ -16,7 +16,7 @@ namespace TrafficTicket.Api.Controller
             _trafficViolationRepository = trafficViolationRepository;
         }
 
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetTrafficViolation")]
         [ProducesResponseType(typeof(TrafficViolation), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(string id)
         {
@@ -40,7 +40,7 @@ namespace TrafficTicket.Api.Controller
         {
             await _trafficViolationRepository.CreateAsync(trafficViolation);
 
-            return CreatedAtAction("Get", new { id = trafficViolation.Id }, trafficViolation);
+            return CreatedAtAction("GetTrafficViolation", new { id = trafficViolation.Id }, trafficViolation);
         }
 
         [HttpPut]
@@ -50,7 +50,7 @@ namespace TrafficTicket.Api.Controller
             return Ok(await _trafficViolationRepository.UpdateAsync(trafficViolation));
         }
 
-        [HttpDelete("{id}", Name = "Delete")]
+        [HttpDelete("{id}", Name = "DeleteTrafficViolation")]
         [ProducesResponseType(typeof(void), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Delete(string id)
         {

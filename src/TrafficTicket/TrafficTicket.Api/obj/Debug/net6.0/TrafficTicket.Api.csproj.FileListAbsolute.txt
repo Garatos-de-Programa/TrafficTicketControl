@@ -7,6 +7,7 @@ C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\Traffi
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\ref\TrafficTicket.Api.dll
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\TrafficTicket.Api.pdb
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\DnsClient.dll
+C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\Flunt.dll
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\MongoDB.Bson.dll
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\bin\Debug\net6.0\MongoDB.Driver.dll
@@ -41,3 +42,5 @@ C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\Traffi
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\obj\Debug\net6.0\ref\TrafficTicket.Api.dll
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\obj\Debug\net6.0\TrafficTicket.Api.pdb
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\obj\Debug\net6.0\TrafficTicket.Api.genruntimeconfig.cache
+C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\obj\Debug\net6.0\TrafficTicket.Api.Properties.Resources.resources
+C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\TrafficTicket.Api\obj\Debug\net6.0\TrafficTicket.Api.csproj.GenerateResource.cache

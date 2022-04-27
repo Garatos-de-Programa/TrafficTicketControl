@@ -22,8 +22,8 @@ services:
   trafficticket.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
-      - "DatabaseSettings:ConnectionString=mongodb://catalogdb:27017"
+      - ASPNETCORE_URLS=http://+:80
+      - "DatabaseSettings:ConnectionString=mongodb://trafficdb:27017"
     ports:
       - "8000:80"
     depends_on:

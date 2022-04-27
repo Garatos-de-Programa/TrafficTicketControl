@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "trafficticket.api",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "portainer": "StartWithoutDebugging",
+        "trafficdb": "StartWithoutDebugging",
+        "trafficticket.api": "StartDebugging"
+      }
+    }
+  }
+}

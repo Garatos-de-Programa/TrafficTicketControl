@@ -18,7 +18,7 @@ namespace TrafficTicket.Api.Controller
             _trafficFineRepository = trafficFineRepository;
         }
 
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetTrafficFine")]
         [ProducesResponseType(typeof(TrafficFine), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -60,7 +60,7 @@ namespace TrafficTicket.Api.Controller
         {
             await _trafficFineRepository.CreateAsync(trafficFine);
 
-            return CreatedAtAction("Get", new { id = trafficFine.Id }, trafficFine);
+            return CreatedAtAction("GetTrafficFine", new { id = trafficFine.Id }, trafficFine);
         }
 
         [HttpPut]
@@ -72,7 +72,7 @@ namespace TrafficTicket.Api.Controller
             return Ok(await _trafficFineRepository.UpdateAsync(trafficFine));
         }
 
-        [HttpDelete("{id}", Name = "Delete")]
+        [HttpDelete("{id}", Name = "DeleteTrafficFine")]
         [ProducesResponseType(typeof(void), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]

@@ -1,15 +1,43 @@
 services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    ports:
+    - published: 8080
+      target: 8000
+    - published: 9000
+      target: 9000
+    restart: always
+    volumes:
+    - portainer_data:/data:rw
+    - /var/run/docker.sock:/var/run/docker.sock:rw
+  trafficdb:
+    container_name: trafficdb
+    image: mongo
+    ports:
+    - published: 27017
+      target: 27017
+    restart: always
+    volumes:
+    - mongo_data:/data/db:rw
   trafficticket.api:
     build:
       context: C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket
       dockerfile: TrafficTicket.Api/Dockerfile
+    depends_on:
+      trafficdb:
+        condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
+      DatabaseSettings:ConnectionString: mongodb://catalogdb:27017
     image: trafficticketapi
     ports:
-    - target: 80
-    - target: 443
+    - published: 8000
+      target: 80
     volumes:
     - C:\Users\MLKjo\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
 version: '3.4'
+volumes:
+  mongo_data: {}
+  portainer_data: {}
