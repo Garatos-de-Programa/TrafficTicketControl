@@ -60,7 +60,7 @@ namespace TrafficTicket.Api.Controller
         {
             await _trafficFineRepository.CreateAsync(trafficFine);
 
-            return CreatedAtAction("GetTrafficFine", new { id = trafficFine.Id }, trafficFine);
+            return CreatedAtAction("Get", new { id = trafficFine.Id }, trafficFine);
         }
 
         [HttpPut]

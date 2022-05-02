@@ -1,4 +1,6 @@
-﻿namespace TrafficTicket.Api.Models
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace TrafficTicket.Api.Models
 {
     public class TrafficViolation
     {
@@ -8,6 +10,7 @@
 
         public string Name { get; set; }
 
+        [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
         public DateTime CreatedAt { get; set; }
 
         public TrafficViolation()

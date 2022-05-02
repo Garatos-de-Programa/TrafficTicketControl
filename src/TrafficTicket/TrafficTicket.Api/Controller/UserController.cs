@@ -40,7 +40,7 @@ namespace TrafficTicket.Api.Controller
         {
             await _userRepository.CreateAsync(user);
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return CreatedAtAction("Get", new { id = user.Id }, user);
         }
 
         [HttpPut]

@@ -6,16 +6,16 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["TrafficTicket.Api/TrafficTicket.Api.csproj", "TrafficTicket.Api/"]
-RUN dotnet restore "TrafficTicket.Api/TrafficTicket.Api.csproj"
 COPY . .
-WORKDIR "/src/TrafficTicket.Api"
-RUN dotnet build "TrafficTicket.Api.csproj" -c Release -o /app/build
+RUN dotnet restore
+COPY . .
+RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "TrafficTicket.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "TrafficTicket.Api.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet TrafficTicket.Api.dll

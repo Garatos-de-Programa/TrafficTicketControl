@@ -1,9 +1,12 @@
-﻿namespace TrafficTicket.Api.Models.TrafficFine
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace TrafficTicket.Api.Models.TrafficFine
 {
     public class TrafficFine
     {
         public string Id { get; set; }
 
+        [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
         public DateTime CreatedAt { get; set; }
 
         public string Placa { get; set; }

@@ -1,4 +1,5 @@
 using TrafficTicket.Api.Data;
+using TrafficTicket.Api.Middleware;
 using TrafficTicket.Api.Repositories;
 using TrafficTicket.Api.Repositories.Implementation;
 
@@ -26,6 +27,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 

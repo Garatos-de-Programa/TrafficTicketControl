@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using TrafficTicket.Api.Data;
 using TrafficTicket.Api.DataContracts.Queries;
 using TrafficTicket.Api.Models.TrafficFine;
@@ -44,8 +45,11 @@ namespace TrafficTicket.Api.Repositories.Implementation
         public async Task<TrafficFine> GetByDateSearch(DateSearchQuery search)
         {
             var filterBuilder = Builders<TrafficFine>.Filter;
+
+            var endDate = search.CreatedUntil.AddDays(1);
+
             var filter = filterBuilder.Gte(x => x.CreatedAt, search.CreatedSince) &
-            filterBuilder.Lte(x => x.CreatedAt, search.CreatedUntil);
+                filterBuilder.Lte(x => x.CreatedAt, endDate);
 
             return await _trafficFineContext
                             .TrafficFine

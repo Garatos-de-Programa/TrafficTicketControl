@@ -40,7 +40,7 @@ namespace TrafficTicket.Api.Controller
         {
             await _trafficViolationRepository.CreateAsync(trafficViolation);
 
-            return CreatedAtAction("GetTrafficViolation", new { id = trafficViolation.Id }, trafficViolation);
+            return CreatedAtAction("Get", new { id = trafficViolation.Id }, trafficViolation);
         }
 
         [HttpPut]
