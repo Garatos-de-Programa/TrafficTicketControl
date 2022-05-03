@@ -19,3 +19,24 @@ C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\bin\De
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\MLKjo\Documents\workspace\TrafficTicketControl\src\TrafficTicket\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\appsettings.Development.json
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\appsettings.json
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\TrafficTicket.Api.deps.json
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\TrafficTicket.Api.runtimeconfig.json
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\TrafficTicket.Api.exe
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\TrafficTicket.Api.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\Flunt.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\MongoDB.Driver.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\MongoDB.Bson.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\MongoDB.Driver.Core.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\Microsoft.OpenApi.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\DnsClient.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\SharpCompress.dll
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\bin\Debug\TrafficTicket.Api.pdb
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Program Files\Ampps\www\TrafficTicketControl\src\TrafficTicket\obj\Debug\docker-compose.dcproj.CopyComplete

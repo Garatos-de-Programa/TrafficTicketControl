@@ -19,6 +19,8 @@ builder.Services.AddScoped<ITrafficViolationRepository, TrafficViolationReposito
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITrafficFineRepository, TrafficFineRepository>();
 
+builder.Services.AddCors(x => x.AddPolicy("CorsApp", y => { y.WithOrigins("*").AllowAnyMethod().AllowAnyHeader(); }));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +29,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("CorsApp");
 
 app.UseMiddleware<ErrorHandlerMiddleware>();
 

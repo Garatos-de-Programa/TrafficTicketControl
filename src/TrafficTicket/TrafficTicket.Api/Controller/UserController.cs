@@ -38,6 +38,13 @@ namespace TrafficTicket.Api.Controller
         [ProducesResponseType(typeof(User), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Create([FromBody] User user)
         {
+            if (user == null)
+            {
+                return BadRequest();
+            }
+
+            user.Id = Guid.NewGuid().ToString();
+
             await _userRepository.CreateAsync(user);
 
             return CreatedAtAction("Get", new { id = user.Id }, user);
