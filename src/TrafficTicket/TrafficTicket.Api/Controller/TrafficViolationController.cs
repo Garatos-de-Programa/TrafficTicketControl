@@ -38,6 +38,14 @@ namespace TrafficTicket.Api.Controller
         [ProducesResponseType(typeof(TrafficViolation), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Create([FromBody] TrafficViolation trafficViolation)
         {
+
+            if (trafficViolation == null)
+            {
+                return BadRequest();
+            }
+
+            trafficViolation.Id = Guid.NewGuid().ToString();
+
             await _trafficViolationRepository.CreateAsync(trafficViolation);
 
             return CreatedAtAction("Get", new { id = trafficViolation.Id }, trafficViolation);

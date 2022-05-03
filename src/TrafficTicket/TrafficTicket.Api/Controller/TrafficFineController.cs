@@ -58,6 +58,13 @@ namespace TrafficTicket.Api.Controller
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> CreateProduct([FromBody] TrafficFine trafficFine)
         {
+            if (trafficFine == null)
+            {
+                return BadRequest();
+            }
+
+            trafficFine.Id = Guid.NewGuid().ToString();
+
             await _trafficFineRepository.CreateAsync(trafficFine);
 
             return CreatedAtAction("Get", new { id = trafficFine.Id }, trafficFine);
