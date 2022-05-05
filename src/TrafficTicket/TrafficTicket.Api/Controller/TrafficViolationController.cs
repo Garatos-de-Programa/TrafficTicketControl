@@ -20,9 +20,14 @@ namespace TrafficTicket.Api.Controller
         [ProducesResponseType(typeof(TrafficViolation), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(string id)
         {
+            if (!Guid.TryParse(id, out _))
+            {
+                return BadRequest("invalid id format");
+            }
+
             var trafficViolation = await _trafficViolationRepository.GetAsycn(id);
 
-            return Ok(trafficViolation ?? new TrafficViolation(id));
+            return Ok(trafficViolation ?? new TrafficViolation());
         }
 
         [HttpGet("", Name = "GetTrafficsViolations")]
