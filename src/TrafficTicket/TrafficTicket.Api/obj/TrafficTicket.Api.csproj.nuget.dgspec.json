@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MLKjo\\Documents\\workspace\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj": {}
+    "C:\\Program Files\\Ampps\\www\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MLKjo\\Documents\\workspace\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj": {
+    "C:\\Program Files\\Ampps\\www\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MLKjo\\Documents\\workspace\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj",
+        "projectUniqueName": "C:\\Program Files\\Ampps\\www\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj",
         "projectName": "TrafficTicket.Api",
-        "projectPath": "C:\\Users\\MLKjo\\Documents\\workspace\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj",
-        "packagesPath": "C:\\Users\\MLKjo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MLKjo\\Documents\\workspace\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\obj\\",
+        "projectPath": "C:\\Program Files\\Ampps\\www\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\TrafficTicket.Api.csproj",
+        "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Ampps\\www\\TrafficTicketControl\\src\\TrafficTicket\\TrafficTicket.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MLKjo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

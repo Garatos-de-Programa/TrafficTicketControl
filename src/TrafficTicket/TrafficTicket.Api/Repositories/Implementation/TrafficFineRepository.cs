@@ -42,7 +42,7 @@ namespace TrafficTicket.Api.Repositories.Implementation
                            .FirstOrDefaultAsync();
         }
 
-        public async Task<TrafficFine> GetByDateSearch(DateSearchQuery search)
+        public async Task<IEnumerable<TrafficFine>> GetByDateSearch(DateSearchQuery search)
         {
             var filterBuilder = Builders<TrafficFine>.Filter;
 
@@ -54,7 +54,7 @@ namespace TrafficTicket.Api.Repositories.Implementation
             return await _trafficFineContext
                             .TrafficFine
                             .Find(filter)
-                            .FirstOrDefaultAsync();
+                            .ToListAsync();
         }
 
         public async Task<IEnumerable<TrafficFine>> GetFinesAsync()

@@ -14,6 +14,6 @@ namespace TrafficTicket.Api.Repositories
         Task<bool> UpdateAsync(TrafficFine trafficFine);
 
         Task<bool> DeleteAsync(string id);
-        Task<TrafficFine> GetByDateSearch(DateSearchQuery search);
+        Task<IEnumerable<TrafficFine>> GetByDateSearch(DateSearchQuery search);
     }
 }
