@@ -1,4 +1,5 @@
-﻿using TrafficTicket.Api.Models;
+﻿using TrafficTicket.Api.DataContracts.Queries;
+using TrafficTicket.Api.Models;
 
 namespace TrafficTicket.Api.Repositories
 {
@@ -7,6 +8,8 @@ namespace TrafficTicket.Api.Repositories
         Task<IEnumerable<User>> GetUsersAsync();
 
         Task<User> GetAsycn(string id);
+
+        Task<User> GetAsycn(UserSearchQuery userSearchQuery);
 
         Task CreateAsync(User user);
 

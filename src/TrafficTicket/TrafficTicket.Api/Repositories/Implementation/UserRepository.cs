@@ -1,5 +1,6 @@
 ﻿using MongoDB.Driver;
 using TrafficTicket.Api.Data;
+using TrafficTicket.Api.DataContracts.Queries;
 using TrafficTicket.Api.Models;
 
 namespace TrafficTicket.Api.Repositories.Implementation
@@ -38,6 +39,19 @@ namespace TrafficTicket.Api.Repositories.Implementation
                            .Users
                            .Find(p => p.Id == id)
                            .FirstOrDefaultAsync();
+        }
+
+        public async Task<User> GetAsycn(UserSearchQuery userSearchQuery)
+        {
+            var filterBuilder = Builders<User>.Filter;
+
+            var filter = filterBuilder.Eq(x => x.Cpf, userSearchQuery.Cpf) &
+                filterBuilder.Eq(x => x.Senha, userSearchQuery.Password);
+
+            return await _userContext
+                            .Users
+                            .Find(filter)
+                            .FirstOrDefaultAsync();
         }
 
         public async Task<IEnumerable<User>> GetUsersAsync()

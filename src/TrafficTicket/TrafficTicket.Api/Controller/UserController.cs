@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using TrafficTicket.Api.DataContracts.Queries;
 using TrafficTicket.Api.Models;
 using TrafficTicket.Api.Repositories;
 
@@ -23,6 +24,25 @@ namespace TrafficTicket.Api.Controller
             var user = await _userRepository.GetAsycn(id);
 
             return Ok(user ?? new User(id));
+        }
+
+        [HttpGet("search", Name = "GetUserByFilter")]
+        [ProducesResponseType(typeof(User), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetUserByFilter([FromQuery] UserSearchQuery userSearchQuery)
+        {
+            if(userSearchQuery == null)
+            {
+                return BadRequest("Invalid parameter");
+            }
+
+            var user = await _userRepository.GetAsycn(userSearchQuery);
+
+            if(user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
         }
 
         [HttpGet("", Name = "GetUsers")]
